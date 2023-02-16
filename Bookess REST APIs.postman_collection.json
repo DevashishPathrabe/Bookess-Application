@@ -1,0 +1,1193 @@
+{
+	"info": {
+		"_postman_id": "c17eb149-8073-4336-89d7-8e45d1a54987",
+		"name": "Bookess REST APIs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22619752"
+	},
+	"item": [
+		{
+			"name": "Get all Books",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/books",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"books"
+					]
+				},
+				"description": "To get the list of available books.  \nAccessible to: Admin and User"
+			},
+			"response": []
+		},
+		{
+			"name": "Get all Books sorted by ID in ascending order",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/books?sortBy=id&sortDir=asc",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"books"
+					],
+					"query": [
+						{
+							"key": "sortBy",
+							"value": "id"
+						},
+						{
+							"key": "sortDir",
+							"value": "asc"
+						}
+					]
+				},
+				"description": "To get the list of available books sorted by ID in ascending order.  \nAccessible to: Admin and User"
+			},
+			"response": []
+		},
+		{
+			"name": "Get all Books sorted by ID in descending order",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/books?sortBy=id&sortDir=desc",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"books"
+					],
+					"query": [
+						{
+							"key": "sortBy",
+							"value": "id"
+						},
+						{
+							"key": "sortDir",
+							"value": "desc"
+						}
+					]
+				},
+				"description": "To get the list of available books sorted by ID in descending order.  \nAccessible to: Admin and User"
+			},
+			"response": []
+		},
+		{
+			"name": "Get all Books sorted by name in ascending order",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/books?sortBy=name&sortDir=asc",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"books"
+					],
+					"query": [
+						{
+							"key": "sortBy",
+							"value": "name"
+						},
+						{
+							"key": "sortDir",
+							"value": "asc"
+						}
+					]
+				},
+				"description": "To get the list of available books sorted by name in ascending order.  \nAccessible to: Admin and User"
+			},
+			"response": []
+		},
+		{
+			"name": "Get all Books sorted by name in descending order",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/books?sortBy=name&sortDir=desc",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"books"
+					],
+					"query": [
+						{
+							"key": "sortBy",
+							"value": "name"
+						},
+						{
+							"key": "sortDir",
+							"value": "desc"
+						}
+					]
+				},
+				"description": "To get the list of available books sorted by name in descending order.  \nAccessible to: Admin and User"
+			},
+			"response": []
+		},
+		{
+			"name": "Get all Books sorted by author in ascending order",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/books?sortBy=author&sortDir=asc",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"books"
+					],
+					"query": [
+						{
+							"key": "sortBy",
+							"value": "author"
+						},
+						{
+							"key": "sortDir",
+							"value": "asc"
+						}
+					]
+				},
+				"description": "To get the list of available books sorted by author in ascending order.  \nAccessible to: Admin and User"
+			},
+			"response": []
+		},
+		{
+			"name": "Get all Books sorted by author in descending order",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/books?sortBy=author&sortDir=desc",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"books"
+					],
+					"query": [
+						{
+							"key": "sortBy",
+							"value": "author"
+						},
+						{
+							"key": "sortDir",
+							"value": "desc"
+						}
+					]
+				},
+				"description": "To get the list of available books sorted by author in descending order.  \nAccessible to: Admin and User"
+			},
+			"response": []
+		},
+		{
+			"name": "Get all Books sorted by price in ascending order",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/books?sortBy=price&sortDir=asc",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"books"
+					],
+					"query": [
+						{
+							"key": "sortBy",
+							"value": "price"
+						},
+						{
+							"key": "sortDir",
+							"value": "asc"
+						}
+					]
+				},
+				"description": "To get the list of available books sorted by price in ascending order.  \nAccessible to: Admin and User"
+			},
+			"response": []
+		},
+		{
+			"name": "Get all Books sorted by price in descending order",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/books?sortBy=price&sortDir=desc",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"books"
+					],
+					"query": [
+						{
+							"key": "sortBy",
+							"value": "price"
+						},
+						{
+							"key": "sortDir",
+							"value": "desc"
+						}
+					]
+				},
+				"description": "To get the list of available books sorted by price in descending order.  \nAccessible to: Admin and User"
+			},
+			"response": []
+		},
+		{
+			"name": "Register User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"user 02\",\r\n    \"username\": \"user02\",\r\n    \"password\": \"password\",\r\n    \"isAdmin\": false\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"register"
+					]
+				},
+				"description": "To register as a User"
+			},
+			"response": []
+		},
+		{
+			"name": "Login User",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyMDEiLCJleHAiOjE2NjA0NjE4NDcsImlhdCI6MTY2MDQ1NDY0N30.rN3JvZ2DrqHFOCO96l1Yw7GM4gEv3CSxOWypNNi2PwVvQ0O4ugamjv0wze22fKiqNMH9ojREU-jGgXZdE6aVsA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"user01\",\r\n    \"password\": \"password\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"login"
+					]
+				},
+				"description": "To login user. User should be registered before accessing this endpoint.  \nUser will be provided a JSON Web Token (JWT) once login is successful. This JWT should be provided as a Bearer token in the Authorization header wherever required."
+			},
+			"response": []
+		},
+		{
+			"name": "Add to User's Liked Books",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyMDEiLCJleHAiOjE2NjA0Njg2MTEsImlhdCI6MTY2MDQ2MTQxMX0.Tl8w1-gc5L5oMI6vi4oWdCU_zwnVWXuaXfULl2mXTQW3jRPS8GNXPk1Puk8qtqMRL6Ph3ryfETI8YRCD2cNtaQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "2",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/users/liked-books",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"users",
+						"liked-books"
+					]
+				},
+				"description": "To add book with a given Book ID to the list of user's liked books.  \nAccessible to: User"
+			},
+			"response": []
+		},
+		{
+			"name": "Get User's Liked Books",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyMDEiLCJleHAiOjE2NjA0Njg2MTEsImlhdCI6MTY2MDQ2MTQxMX0.Tl8w1-gc5L5oMI6vi4oWdCU_zwnVWXuaXfULl2mXTQW3jRPS8GNXPk1Puk8qtqMRL6Ph3ryfETI8YRCD2cNtaQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/users/liked-books",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"users",
+						"liked-books"
+					]
+				},
+				"description": "To get the list of user's liked books.  \nAccessible to: User"
+			},
+			"response": []
+		},
+		{
+			"name": "Add to User's Read Later Books",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyMDEiLCJleHAiOjE2NjA0Njg2MTEsImlhdCI6MTY2MDQ2MTQxMX0.Tl8w1-gc5L5oMI6vi4oWdCU_zwnVWXuaXfULl2mXTQW3jRPS8GNXPk1Puk8qtqMRL6Ph3ryfETI8YRCD2cNtaQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "2",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/users/read-later-books",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"users",
+						"read-later-books"
+					]
+				},
+				"description": "To add book with a given Book ID to the list of user's read later books.  \nAccessible to: User"
+			},
+			"response": []
+		},
+		{
+			"name": "Get User's Read Later Books",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyMDEiLCJleHAiOjE2NjA0Njg2MTEsImlhdCI6MTY2MDQ2MTQxMX0.Tl8w1-gc5L5oMI6vi4oWdCU_zwnVWXuaXfULl2mXTQW3jRPS8GNXPk1Puk8qtqMRL6Ph3ryfETI8YRCD2cNtaQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/users/read-later-books",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"users",
+						"read-later-books"
+					]
+				},
+				"description": "To get the list of user's read later books.  \nAccessible to: User"
+			},
+			"response": []
+		},
+		{
+			"name": "Logout User",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyMDEiLCJleHAiOjE2NjA0NjI0MjQsImlhdCI6MTY2MDQ1NTIyNH0.4ULki7_AGE4Z8hOzP35S4XFJzWU5g3x87fN7jC7CnRs4JAbZ6OxO8wGUYPhSVaiBce8Do1_-ftxG9__1Y8fVKg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/signout",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"signout"
+					]
+				},
+				"description": "To logout User"
+			},
+			"response": []
+		},
+		{
+			"name": "Register Admin",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyMDEiLCJleHAiOjE2NjA0NjI0MjQsImlhdCI6MTY2MDQ1NTIyNH0.4ULki7_AGE4Z8hOzP35S4XFJzWU5g3x87fN7jC7CnRs4JAbZ6OxO8wGUYPhSVaiBce8Do1_-ftxG9__1Y8fVKg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"admin 01\",\r\n    \"username\": \"admin01\",\r\n    \"password\": \"password\",\r\n    \"isAdmin\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"register"
+					]
+				},
+				"description": "To get register as an Admin."
+			},
+			"response": []
+		},
+		{
+			"name": "Login Admin",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbjAxIiwiZXhwIjoxNjYwNDYzMjM1LCJpYXQiOjE2NjA0NTYwMzV9.XrvBcWrDwhyrbuXWiDzLwa3Z6pGovRqd3AYE1O7w1x7RTxHzEX57l1WadYzU9kjtWES_x8Jk4SlhEFRNZDPW-w",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"admin01\",\r\n    \"password\": \"password\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"login"
+					]
+				},
+				"description": "To login admin. Admin should be registered before accessing this endpoint.  \nAdmin will be provided a JSON Web Token (JWT) once login is successful. This JWT should be provided as a Bearer token in the Authorization header wherever required."
+			},
+			"response": []
+		},
+		{
+			"name": "Create User",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbjAxIiwiZXhwIjoxNjYwNDYzMjM1LCJpYXQiOjE2NjA0NTYwMzV9.XrvBcWrDwhyrbuXWiDzLwa3Z6pGovRqd3AYE1O7w1x7RTxHzEX57l1WadYzU9kjtWES_x8Jk4SlhEFRNZDPW-w",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"user 02\",\r\n    \"username\": \"user02\",\r\n    \"password\": \"password\",\r\n    \"isAdmin\": false\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"users"
+					]
+				},
+				"description": "To create a new user.  \nAccessible to: Admin"
+			},
+			"response": []
+		},
+		{
+			"name": "Get all Users",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbjAxIiwiZXhwIjoxNjYwNDYzMjM1LCJpYXQiOjE2NjA0NTYwMzV9.XrvBcWrDwhyrbuXWiDzLwa3Z6pGovRqd3AYE1O7w1x7RTxHzEX57l1WadYzU9kjtWES_x8Jk4SlhEFRNZDPW-w",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"users"
+					]
+				},
+				"description": "To get the list of available users.  \nAccessible to: Admin"
+			},
+			"response": []
+		},
+		{
+			"name": "Get User by ID",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbjAxIiwiZXhwIjoxNjYwNDY2MjQ3LCJpYXQiOjE2NjA0NTkwNDd9.pIkK9oYn6ygJ2q0Tgi9DPbce5ZRgs6d9wJjhvn-TWs5GYXuNf8z4dD5VXc2mwsJYFCfL587mIV-U2zRdOwj8AQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/users/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"users",
+						"2"
+					]
+				},
+				"description": "To get the user details of a given User ID.  \nAccessible to: Admin"
+			},
+			"response": []
+		},
+		{
+			"name": "Update User",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbjAxIiwiZXhwIjoxNjYwNDYzMjM1LCJpYXQiOjE2NjA0NTYwMzV9.XrvBcWrDwhyrbuXWiDzLwa3Z6pGovRqd3AYE1O7w1x7RTxHzEX57l1WadYzU9kjtWES_x8Jk4SlhEFRNZDPW-w",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"user 03\",\r\n    \"isAdmin\": false\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/users/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"users",
+						"1"
+					]
+				},
+				"description": "To update user details of a given User ID.  \nUser attributes that can be updated are 'name' and 'isAdmin'.  \nAccessible to: Admin"
+			},
+			"response": []
+		},
+		{
+			"name": "Update User",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbjAxIiwiZXhwIjoxNjYwNDYzMjM1LCJpYXQiOjE2NjA0NTYwMzV9.XrvBcWrDwhyrbuXWiDzLwa3Z6pGovRqd3AYE1O7w1x7RTxHzEX57l1WadYzU9kjtWES_x8Jk4SlhEFRNZDPW-w",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"user 01\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/users/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"users",
+						"1"
+					]
+				},
+				"description": "To update user details of a given User ID.  \nUser attribute that can be updated is 'name'.  \nAccessible to: Admin"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete User by ID",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbjAxIiwiZXhwIjoxNjYwNDYzMjM1LCJpYXQiOjE2NjA0NTYwMzV9.XrvBcWrDwhyrbuXWiDzLwa3Z6pGovRqd3AYE1O7w1x7RTxHzEX57l1WadYzU9kjtWES_x8Jk4SlhEFRNZDPW-w",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/users/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"users",
+						"3"
+					]
+				},
+				"description": "To delete the user with a given User ID.  \nAccessible to: Admin"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete all Users",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbjAxIiwiZXhwIjoxNjYwNDYzMjM1LCJpYXQiOjE2NjA0NTYwMzV9.XrvBcWrDwhyrbuXWiDzLwa3Z6pGovRqd3AYE1O7w1x7RTxHzEX57l1WadYzU9kjtWES_x8Jk4SlhEFRNZDPW-w",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"users"
+					]
+				},
+				"description": "To delete all the users.  \nAccessible to: Admin"
+			},
+			"response": []
+		},
+		{
+			"name": "Create Book",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbjAxIiwiZXhwIjoxNjYwNDYzMjM1LCJpYXQiOjE2NjA0NTYwMzV9.XrvBcWrDwhyrbuXWiDzLwa3Z6pGovRqd3AYE1O7w1x7RTxHzEX57l1WadYzU9kjtWES_x8Jk4SlhEFRNZDPW-w",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Book 01\",\r\n    \"author\": \"Author 01\",\r\n    \"price\": 100\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/books",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"books"
+					]
+				},
+				"description": "To create a new book.  \nAccessible to: Admin"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Book by ID",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbjAxIiwiZXhwIjoxNjYwNDYzMjM1LCJpYXQiOjE2NjA0NTYwMzV9.XrvBcWrDwhyrbuXWiDzLwa3Z6pGovRqd3AYE1O7w1x7RTxHzEX57l1WadYzU9kjtWES_x8Jk4SlhEFRNZDPW-w",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/books/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"books",
+						"2"
+					]
+				},
+				"description": "To get the book details of a given Book ID.  \nAccessible to: Admin"
+			},
+			"response": []
+		},
+		{
+			"name": "Update Book",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbjAxIiwiZXhwIjoxNjYwNDYzMjM1LCJpYXQiOjE2NjA0NTYwMzV9.XrvBcWrDwhyrbuXWiDzLwa3Z6pGovRqd3AYE1O7w1x7RTxHzEX57l1WadYzU9kjtWES_x8Jk4SlhEFRNZDPW-w",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Book 02\",\r\n    \"author\": \"Author 01\",\r\n    \"price\": \"200\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/books/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"books",
+						"1"
+					]
+				},
+				"description": "To update book details of a given Book ID.  \nBook attributes that can be updated are 'name', 'author' and 'price'.  \nAccessible to: Admin"
+			},
+			"response": []
+		},
+		{
+			"name": "Update Book",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbjAxIiwiZXhwIjoxNjYwNDYzMjM1LCJpYXQiOjE2NjA0NTYwMzV9.XrvBcWrDwhyrbuXWiDzLwa3Z6pGovRqd3AYE1O7w1x7RTxHzEX57l1WadYzU9kjtWES_x8Jk4SlhEFRNZDPW-w",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"author\": \"Author 01\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/books/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"books",
+						"1"
+					]
+				},
+				"description": "To update book details of a given Book ID.  \nBook attributes that can be updated are 'name' and/or 'author'.  \nAccessible to: Admin"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Book by ID",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbjAxIiwiZXhwIjoxNjYwNDY2MjQ3LCJpYXQiOjE2NjA0NTkwNDd9.pIkK9oYn6ygJ2q0Tgi9DPbce5ZRgs6d9wJjhvn-TWs5GYXuNf8z4dD5VXc2mwsJYFCfL587mIV-U2zRdOwj8AQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/books/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"books",
+						"3"
+					]
+				},
+				"description": "To delete the book with a given Book ID.  \nAccessible to: Admin"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete all Books",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbjAxIiwiZXhwIjoxNjYwNDY2MjQ3LCJpYXQiOjE2NjA0NTkwNDd9.pIkK9oYn6ygJ2q0Tgi9DPbce5ZRgs6d9wJjhvn-TWs5GYXuNf8z4dD5VXc2mwsJYFCfL587mIV-U2zRdOwj8AQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/books",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"books"
+					]
+				},
+				"description": "To delete all the books.  \nAccessible to: Admin"
+			},
+			"response": []
+		},
+		{
+			"name": "Logout Admin",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbjAxIiwiZXhwIjoxNjYwNDY2MjQ3LCJpYXQiOjE2NjA0NTkwNDd9.pIkK9oYn6ygJ2q0Tgi9DPbce5ZRgs6d9wJjhvn-TWs5GYXuNf8z4dD5VXc2mwsJYFCfL587mIV-U2zRdOwj8AQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/signout",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"signout"
+					]
+				},
+				"description": "To Logout."
+			},
+			"response": []
+		}
+	]
+}
